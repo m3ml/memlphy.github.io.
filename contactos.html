@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MEML - Photograp</title>
+	<link rel="shorcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/default.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="contac/estilo.css">
+	<link rel="stylesheet" href="css/responsiveslides.css">
+	<script src="js/responsiveslides.js"></script>
+	
+	<!--[if IE]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->  
+
+	<script>
+		$(document).ready(function(){
+			$("#slider-home").responsiveSlides({	
+				speed:800,		
+				nav: true,
+				namespace: 'slid-btns',
+				titleAnimation: 'bounceIn'
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<header class="cabecera">
+	<div class="container clearfix">
+		<div class="logo">
+			<img src="img/logo.png">
+		</div>
+		<nav class="menu">
+			<ul class="clearfix">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="portafolio.html">Portafolio</a></li>
+				<li class="active"><a href="contactos.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class="form">
+			<form action="contac/guardar.php" method="POST">
+				<p>Contacto</p>
+				<label for="nombre">Su nombre</label>
+				<br>
+				<input type="text" name="nombre" placeholder="Nombre" required>
+				<p>Correo</p>
+				<label for="correo">Direccion De Correo</label>
+				<br>
+				<input type="email" name="correo" placeholder="alguien@algo.com" required>
+				<p>Mensaje</p>
+				<label for="mensaje">Su Mensaje</label>
+				<br>
+				<textarea name="mensaje" placeholder="Mensaje" required></textarea>
+				<br>
+				<br>
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
+
+
+
+<section class="contactme clearfix">
+	<div class="left">
+		<span class="dotted">¿Necesitas algo?</span> Solo ponte en contacto conmigo y manos a la obra.
+	</div>
+	<div class="right">
+		<a href="contacto" class="btn"> ¡Contáctame!</a>
+	</div>
+</section>
+<footer class="footer">
+	<p>Todos los derechos reservados &copy; 2018. Desarrollado por <a href="#">MEML</a></p>
+</footer>
+</body>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script>	
+  new WOW().init();    
+</script>
+</html>
